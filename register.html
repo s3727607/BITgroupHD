@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+  </head>
+  
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <header class="form-head">
+            <h1>Become a member</h1>
+            <h2>Sign up now</h2>
+        </header>
+
+        <main class="form-body">
+
+            <div class="name-box">
+                <div class="firstname">
+                    <label for="fname">First name:</label>
+                    <span id="invalid-first-name"></span>
+                    <input type="text" name="firstname" id="firstname" onkeyup="validateFirstName()" placeholder="John">
+                </div>
+
+                <div class="lastname">
+                    <label for="lname">Last name:</label>
+                    <span id="invalid-last-name"></span>
+                    <input type="text" name="lastname" id="lastname" onkeyup="validateLastName()" placeholder="Smith">
+                </div>
+            </div>
+
+            <div class="email">
+                <label for="email">Email:</label>
+                <span id="invalid-email"></span>
+                <input type="email" name="email" id="userEmail" placeholder="E.g: example@gmail.com" onkeyup="validateEmail()">
+            </div>
+            
+            <div class="phone-number">
+                <label for="phone">Phone:</label>
+                <span id="phone-number"></span>
+                <input type="text" name="phone" id="phoneNumber" onkeyup="validatePhone()">
+            </div>
+
+
+            <div class="password">
+                <label for="password">Password:</label>
+                <span id="invalid-password"></span>
+                <input type="password" name="password" id="userPassword" placeholder="Your new password" onkeyup="validatePassword()">
+            </div>
+
+            <div class="confirmPassword">
+                <label for="confirmPassword">Confirm password:</label>
+                <span id="invalid-retype-password"></span>
+                <input type="password" name="password_confirm" id="confirmPassword" placeholder="Confirm password" onkeyup="validateRetypePassword()">
+            </div>
+
+            <span id="invalid-form">
+              
+            </span>
+
+            <div class="form-button">
+                <button class="clear-button" type="reset">Cancel</button>
+                <button class="register-button" type="submit">Register</button>
+            </div>
+        </main>
+
+        <footer class="form-footer">
+            <p>Already have an account? <a href="login.html">Sign in </a> or <a href="homepage.html">Back</a></p>
+            
+        </footer>
+    </form>
+
+    <script src="js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contactus.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bxslider.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <br>
+        <!--<h1>Contact Us</h1> -->
+        <!-- put picture -->
+        
+          <!-- Fixed navbar -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+               <a href="javascript:;"><img src="images/53007d5b00000.png" class="logo" alt="logo"/></a>
+      
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-nav-c">
+                  <li><a href="homepage.html">Homepage</a></li>
+      
+                  <li><a href="login.html">Login</a></li>
+                  <li class="dropdown">
+                      <a href="productpage.html">Product Centre</a>
+                      <a href="javascript:;" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                          <ul class="dropdown-menu nav_small" role="menu">
+                            <li><a href="javascript:;">Product Category 1</a></li>
+                            <li><a href="javascript:;">Product Category 2</a></li>
+                            <li><a href="javascript:;">Product Category 3</a></li>
+                            <li><a href="javascript:;">Product Category 4</a></li>
+                          </ul>
+                  </li>
+                  <li class="dropdown">
+                          <a href="javascript:;">News</a>
+                          <a href="javascript:;" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                            <ul class="dropdown-menu nav_small" role="menu">
+                            <li><a href="javascript:;">News</a></li>
+                            </ul>
+                  </li>
+                  <li><a href="Chat_Function.html">Online Message</a></li>                   
+                  <li><a href="contactus.html">Contact Us</a></li>              
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Need help? Feel free to contact us:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                <li>Phone: +61 (123) 456-7890</li>
+                <li>Address: 124 La Trobe Street, Melbourne Victoria 3000</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_contact_form.php" method="post">
+                
+            <div class = "name">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class = "email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="message">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+                <div  class="form-button">
+                <button class="clear-button" type="reset">Cancel</button>
+                <button class="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/contactus.js"></script>
+    <footer>
+        <p>&copy; GroupHD</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #f0eef6;
+}
+
+.clear-button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px ;
+  background-color: white;
+  color: #5DBFB0;
+  border: 2px solid #5DBFB0; 
+  justify-content: center;
+}
+
+.register-button
+{
+  background-color: #5DBFB0;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px ;
+  justify-content: center;
+  
+}
+
+input[type=text], input[type=password], input[type=email], iput[type=phone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  
+}
+
+
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, iput[type=phone]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+.name-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+#invalid-format{
+
+  color: red;
+}
+
+.form-footer a{
+    color: #5DBFB0;
+}
+
+form{
+    width: 50%;
+    height: auto;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 0 10px 10px #e6e7e8;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+
+.form-head h1{
+  
+    font-size: 32px;
+    text-align: center;
+    margin: 10px 0;
+   
+}
+
+.form-head h2{
+  
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-body{
+    margin: 100px 0;
+}
+
+
+.form-body .form-button{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+}
+
+
+.form-body .form-button button{
+    width: 45%;
+    outline: none;
+    border: 2px solid #5DBFB0;
+    cursor: pointer;
+}
+
+
+
+.form-body .form-button button:hover{
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+.form-body span{
+    position: absolute;
+    font-size: 16px;
+    color: red;
+    padding: 0 10px;
+}
+
+
+#invalid-form{
+    position: relative;
+    padding: 0;
+    color: red;
+}
+
+.form-footer p{
+  text-align: center;
+    margin: 10px 0;
+}
+
